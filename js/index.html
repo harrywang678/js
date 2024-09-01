@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dice">
+      <h2>Dice</h2>
+      <br />
+      <div class="dice">
+        <button class="btn">Roll Me</button>
+        <h3 class="number"></h3>
+      </div>
+    </div>
+
+    <div class="if-statments">
+      <h3>If Statements + .check Property</h3>
+      <br />
+      <div class="check">
+        <div class="item"></div>
+        <input type="checkbox" id="sub" />
+        <label for="sub"> Subscribe </label>
+        <br /><br />
+        <input type="radio" id="visa" name="credit" />
+        <label for="visa"> Visa </label> <br />
+        <input type="radio" id="mastercard" name="credit" />
+        <label for="mastercard"> MasterCard </label> <br />
+        <input type="radio" id="discover" name="credit" />
+        <label for="discover"> Discover </label><br /><br />
+        <button type="submit" value="Submit" id="submit">Submit</button>
+        <h3 id="subText"></h3>
+        <h3 id="cardText"></h3>
+      </div>
+    </div>
+
+    <div class="numberguess">
+      <h3>Number Guessing Game</h3>
+      <label id="label" for="myNumber"> Guess a Number!</label>
+      <input id="myNumber" />
+      <button id="start">Submit</button>
+
+      <h4 id="attempts">Attempts:</h4>
+      <h4 id="result">Result:</h4>
+    </div>
+
+    <div class="tempconvert">
+      <form>
+        <h3>Temperature Converter</h3>
+        <label for="temp"> Enter your Temperature. </label>
+        <input type="number" id="temp" />
+        <div class="base">
+          <div class="item">
+            <input type="radio" name="unit" id="FtoC" />
+            <label for="FtoC">Farenheit to Celsius</label>
+          </div>
+          <div class="item">
+            <input type="radio" name="unit" id="CtoF" />
+            <label for="CtoF">Celsius to Farenheit</label>
+          </div>
+        </div>
+        <button type="button" onclick="convertTemp()">Submit</button>
+        <h4 id="tempResult"></h4>
+      </form>
+    </div>
+
+    <div class="diceRoller">
+      <h3>Dice Roller</h3>
+      <label> Enter the Number of Dices</label>
+      <input type="number" value="1" id="numDices" min="1" max="8" />
+      <button type="button" onclick="rollDice()">Submit</button>
+      <div id="diceImages"></div>
+    </div>
+
+    <div class="randomPassword">
+      <h3>Random Password Generator</h3>
+
+      <div class="options">
+        <div class="item">
+          <label for="capitalLetters"> Capital Letters </label>
+          <input type="checkbox" id="capitalLetters" />
+        </div>
+        <div class="item">
+          <label for="lowerLetters"> LowerCase Letters </label>
+          <input type="checkbox" id="lowerLetters" />
+        </div>
+        <div class="item">
+          <label for="numbers"> Numbers </label>
+          <input type="checkbox" id="numbers" />
+        </div>
+        <div class="item">
+          <label for="specialChar"> Special Characters </label>
+          <input type="checkbox" id="specialChar" />
+        </div>
+      </div>
+      <button type="button" onclick="passwordgenerator()">Submit</button>
+      <h3>Your Password:</h3>
+      <h3 id="passwordResult"></h3>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

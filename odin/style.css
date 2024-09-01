@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+}
+
+body h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 25px;
+}
